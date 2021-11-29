@@ -1,19 +1,19 @@
 import React from "react";
 import "./Home.css";
-import image from "../../image/dark.jpg";
-import image2 from "../../image/21741257_484032028630091_994397574647945446_o-compressed.jpg";
+import image2 from "../../image/IMG_20210106_010859-removebg-preview (1).png";
+import resume from "../../image/mehedi-hasan-resume-main-copy.pdf";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home-page">
       <div className="bg"></div>
       <div>
-        <img className="image" src={image} alt="" srcset="" />
+        <img className="image" src={image2} alt="" srcset="" />
       </div>
       <div className="main-section">
         <div className="text">
           <div className="">
-            <span className="befor-name"></span>
             <h1 className="name">
               <span className="name-color"> I'M MEHEDI HASAN.</span> <br />
               WEB DEVLOPER
@@ -24,49 +24,58 @@ const Home = () => {
               about building excellent <br /> software that improves the lives
               of those around me.
             </p>
+            <p className="for-maxWidth-650">
+              I'm a Tunisian based web designer & front‑end developer focused on
+              crafting clean & user‑friendly experiences, I am passionate about
+              building excellent software that improves the lives of those
+              around me.
+            </p>
 
             <div>
-              <a href="http://marcel-pirnay.be/" class="btn">
-                <svg width="277" height="62">
-                  <defs>
-                    <linearGradient id="grad1">
-                      <stop offset="0%" stop-color="#FF8282" />
-                      <stop offset="100%" stop-color="#E178ED" />
-                    </linearGradient>
-                  </defs>
+              <a download="Mehedi Hasan Resume" href={resume} class="btn">
+                <svg width="240" height="65">
                   <rect
-                    x="5"
-                    y="5"
-                    rx="25"
+                    x="1"
+                    y="1"
+                    rx="27"
                     fill="none"
-                    stroke="url(#grad1)"
-                    width="266"
-                    height="50"
+                    width="218"
+                    height="55"
                   ></rect>
                 </svg>
 
-                <span>Dowonlode Resume</span>
+                <span>download resume</span>
               </a>
             </div>
-
-            {/* <button className="resume-button">Dowonlode Resume</button> */}
           </div>
         </div>
-        <div className="side-button">
-          <div className="home-button icon-box">
-            <i class="fas fa-home"></i>
-          </div>
-          <div className="about icon-box">
-            <i class="fas fa-user"></i>
-          </div>
-          <div className="project icon-box">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <div className="contuact icon-box">
-            <i class="far fa-envelope-open"></i>
-          </div>
-          <div className="blog icon-box">
-            <i class="far fa-comments"></i>
+        <div className="button-maxWidth-650">
+          <div className="side-button">
+            <Link style={{ color: "inherit" }} to="/">
+              <div className="home-button icon-box">
+                <i class="fas fa-home"></i>
+              </div>
+            </Link>
+            <Link style={{ color: "inherit" }} to="/about">
+              <div className="about icon-box">
+                <i class="fas fa-user"></i>
+              </div>
+            </Link>
+            <Link style={{ color: "inherit" }} to="/projects">
+              <div className="project icon-box">
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </Link>
+            <Link style={{ color: "inherit" }} to="/contact">
+              <div className="contuact icon-box">
+                <i class="far fa-envelope-open"></i>
+              </div>
+            </Link>
+            <Link style={{ color: "inherit" }} to="/contact">
+              <div className="blog icon-box">
+                <i class="far fa-comments"></i>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
