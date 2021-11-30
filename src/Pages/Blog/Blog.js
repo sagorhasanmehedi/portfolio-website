@@ -1,10 +1,11 @@
 import React from "react";
 import "./Bloge.css";
+import img from "../../image/comming soon.jpg";
 
 const Blog = () => {
   return (
     <div>
-      <h1>this is bloge page</h1>
+      <img className="blog-page" src={img} alt="" srcset="" />
     </div>
   );
 };

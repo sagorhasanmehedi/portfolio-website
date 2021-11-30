@@ -71,7 +71,10 @@ const Home = () => {
                 <i class="far fa-envelope-open"></i>
               </div>
             </Link>
-            <Link style={{ color: "inherit" }} to="/contact">
+            <Link
+              style={{ color: "inherit", textDecoration: "none" }}
+              to="/blog"
+            >
               <div className="blog icon-box">
                 <i class="far fa-comments"></i>
               </div>
