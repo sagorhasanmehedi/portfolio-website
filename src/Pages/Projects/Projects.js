@@ -8,6 +8,7 @@ import nj from "../../image/nj.png";
 import quadex from "../../image/quadex.jpg";
 
 const Projects = () => {
+  const hellow = { name: "mehedi" };
   return (
     <div className="projects-page">
       <div className="heading">
